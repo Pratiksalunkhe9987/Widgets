@@ -18,12 +18,12 @@
     "settings": [{
         "name": "company",
         "type": "string",
-        "defaultValue": "100",
+        "defaultValue": "550",
         "labelId": "companyId"
     }, {
         "name": "LogicalId",
         "type": "string",
-        "defaultValue": "lid://infor.ln.erp7",
+        "defaultValue": "lid://infor.ln.calibre550",
         "labelId": "LogicalId"
     }, {
         "name": "Method",
@@ -223,7 +223,7 @@
     }, {
         "name": "Location",
         "type": "string",
-        "defaultValue": "S_100",
+        "defaultValue": "S_550",
         "labelId": "Location"
     }, {
         "name": "ViewId",
@@ -238,7 +238,7 @@
     }, {
         "name": "BDEURL",
         "type": "string",
-        "defaultValue": "/CustomerApi/EXTEND/c4ws/services/WorkloadItems/EXTEND_100",
+        "defaultValue": "/CustomerApi/EXTEND/c4ws/services/WorkloadItems/Calibre_550",
         "labelId": "Service URL"
     }, {
         "name": "operator1",
