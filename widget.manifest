@@ -1,0 +1,311 @@
+{
+    "widgetId": "eet.erp.count.widget",
+    "type": "inline",
+    "framework": "angular",
+    "aotVersion": "12",
+    "name": "Count Widget",
+    "version": "1.1",
+    "category": "application",
+    "moduleName": "eet.erp.count.widget.widget",
+    "enableRefresh": true,
+    "requiresConfig": true,
+    "emptyConfig": {
+        "icon": "no-tasks",
+        "titleId": "emptyConfigTitle",
+        "descriptionId": "emptyConfigDescription",
+        "buttonId": "emptyConfigButton"
+    },
+    "settings": [{
+        "name": "company",
+        "type": "string",
+        "defaultValue": "100",
+        "labelId": "companyId"
+    }, {
+        "name": "LogicalId",
+        "type": "string",
+        "defaultValue": "lid://infor.ln.erp7",
+        "labelId": "LogicalId"
+    }, {
+        "name": "Method",
+        "type": "selector",
+        "labelId": "Count for",
+        "values": [{
+            "text": "# of Active Rental Contract",
+            "value": "RentalContractActive"
+        }, {
+            "text": "Rental Contracts Not Returned",
+            "value": "RentalContractNotReturned"
+        }, {
+            "text": "Rental Contracts Ready for delivery",
+            "value": "RentalContractReadyForDelivery"
+        }, {
+            "text": "Rental Contract to be Returned",
+            "value": "RentalContractToBeReturned"
+        }, {
+            "text": "Rental Doubtful Invoices",
+            "value": "RentalDisputedInvoices"
+        }, {
+            "text": "Rental Invoices OverDue and Not Paid",
+            "value": "RentalInvOverDueNotPaid"
+        }, {
+            "text": "Rental Invoicing Schedules to be processed",
+            "value": "RentalInvScheduleToBeProcessed"
+        }, {
+            "text": "Rental Customer Insurance Expiring In X Days",
+            "value": "RentalCustomerInsuranceExpiringInXDays"
+        }, 
+		{
+            "text": "Returned but not Invoiced Rental Contract Lines",
+            "value": "RentalRetNotInvLines"
+        },{
+            "text": "Demo Contract Due Date",
+            "value": "DemoContractDueToday"
+        }, {
+            "text": "Demo Contract Overdue",
+            "value": "DemoContractOverdue"
+        }, {
+            "text": "Equipment Approved Quotes CRM",
+            "value": "EquipApprovedQuotesCRM"
+        }, {
+            "text": "Equipment Approved Sales orders",
+            "value": "EquipApprovedSOs"
+        }, {
+            "text": "Equipment BackOrder Not Receieved",
+            "value": "EquipBackOrderNotReceieved"
+        }, {
+            "text": "Equipment Escalated BackOrder",
+            "value": "EquipEscalatedBackOrder"
+        }, {
+            "text": "Equipment Expected POs",
+            "value": "EquipExpectedPOs"
+        }, {
+            "text": "Equipment Expected SOs",
+            "value": "EquipExpectedSOs"
+        }, {
+            "text": "Equipment Floor Plan Settlement Approved SOs",
+            "value": "EquipFloorPlanSettlementApprovedSOs"
+        }, {
+            "text": "Equipment Floor Plan Settlement Sold Machine",
+            "value": "EquipFloorPlanSettlementSoldMachine"
+        }, {
+            "text": "Equipment Open SOs",
+            "value": "EquipOpenSOs"
+        }, {
+            "text": "Equipment Pending Approval SOs",
+            "value": "EquipPendingApprovalSOs"
+        }, {
+            "text": "Equipment Pending PDI on POs",
+            "value": "EquipPendingPDIonPOs"
+        }, {
+            "text": "Equipment Pending PDI on SOs",
+            "value": "EquipPendingPDIonSOs"
+        }, {
+            "text": "Equipment Quotes To FollowUp",
+            "value": "EquipQuotesToFollowUp"
+        }, {
+            "text": "Equipment Sales Movement Memo Pending POs",
+            "value": "EquipSalesMovementMemoPenDPOs"
+        }, {
+            "text": "Equipment Transport Out Open",
+            "value": "EquipTransportOutOpen"
+        }, {
+            "text": "Equipment Transport Out Today",
+            "value": "EquipTransportOutToday"
+        }, {
+            "text": "Equipment Unattended Sales Order",
+            "value": "EquipUnattendedSalesOrder"
+        }, {
+            "text": "Equipment Units Due For Buyback Or Tradeback",
+            "value": "EquipUnitsDueForBuybackOrTradeback"
+        }, {
+            "text": "Finance Credit Blocks",
+            "value": "finCreditBlocks"
+        }, {
+            "text": "Finance Delayed Approval for Credit Block",
+            "value": "FinDelayedApprovalforCreditBlock"
+        }, {
+            "text": "Finance Disputed Invoices",
+            "value": "FinDisputedInvoices"
+        }, {
+            "text": "Finance FollowUps Due Today",
+            "value": "FinFollowUpsDueToday"
+        }, {
+            "text": "Finance Invoices Due",
+            "value": "FinInvoicesDue"
+        }, {
+            "text": "Finance New Customer Added",
+            "value": "FinNewCustomerAdded"
+        }, {
+            "text": "Finance Open Ready Batches",
+            "value": "FinOpenReadyBatches"
+        }, {
+            "text": "Finance OverDue FollowUps",
+            "value": "FinOverDueFollowUps"
+        }, {
+            "text": "Finance Payments Due",
+            "value": "FinPaymentsDue"
+        }, {
+            "text": "Tax Exemption Expiring In X Days",
+            "value": "FinTaxExemptionExpiringInXDays"
+        }, {
+            "text": "Finance Vendor Payment Due",
+            "value": "FinVendorPaymentDue"
+        },{
+            "text": "Parts BackOrder Received Not Shipped",
+            "value": "PartsBackOrderReceivedNotShipped"
+        }, {
+            "text": "Parts Buyer Request",
+            "value": "PartsBuyerRequest"
+        }, {
+            "text": "Parts Delayed BackOrder",
+            "value": "PartsDelayedBackOrder"
+        }, {
+            "text": "Parts Escalated BackOrder",
+            "value": "PartsEscalatedBackOrder"
+        }, {
+            "text": "Parts Expire Protected Stock",
+            "value": "PartsExpireProtectedStock"
+        }, {
+            "text": "Requested Parts",
+            "value": "PartsPartsRequested"
+        }, {
+            "text": "Parts Pending Picking List",
+            "value": "PartsPendingPickingList"
+        }, {
+            "text": "Parts Sales Price Less than Cost Price",
+            "value": "PartsSalesPriceLessThanCostPrice"
+        }, {
+            "text": "Parts Shipped Not Invoiced",
+            "value": "PartsShippedNotInvoiced"
+        }, {
+            "text": "Parts Stock Minimum Inventory",
+            "value": "PartsStockMinInv"
+        }, {
+            "text": "Parts Stock Zero Invoice",
+            "value": "PartsStockZeroInv"
+        }, {
+            "text": "PartsSuggestedOrders",
+            "value": "PartsSuggestedOrders"
+        }, {
+            "text": "PartsUnattendedBackOrder",
+            "value": "PartsUnattendedBackOrder"
+        }, {
+            "text": "SerBackOrderReceivedNotShipped",
+            "value": "SerBackOrderReceivedNotShipped"
+        }, {
+            "text": "SerCreditBlocks",
+            "value": "SerCreditBlocks"
+        }, {
+            "text": "SerDelayedPMSchedules",
+            "value": "SerDelayedPMSchedules"
+        }, {
+            "text": "SerEstimateBlock",
+            "value": "SerEstimateBlock"
+        }, {
+            "text": "SerExpiredPromiseDate",
+            "value": "SerExpiredPromiseDate"
+        }, {
+            "text": "SerExpireWarranties",
+            "value": "SerExpireWarranties"
+        }, {
+            "text": "SerNonDeliveredParts",
+            "value": "SerNonDeliveredParts"
+        }, {
+            "text": "SerPendingTechnicianAssignment",
+            "value": "SerPendingTechnicianAssignment"
+        }, {
+            "text": "SerPMSchedules",
+            "value": "SerPMSchedules"
+        }, {
+            "text": "SerRecommendedPMs",
+            "value": "SerRecommendedPMs"
+        }]
+    }, {
+        "name": "Location",
+        "type": "string",
+        "defaultValue": "S_100",
+        "labelId": "Location"
+    }, {
+        "name": "ViewId",
+        "type": "string",
+        "defaultValue": "RentalView",
+        "labelId": "ViewId"
+    }, {
+        "name": "TenantId",
+        "type": "string",
+        "defaultValue": "infor",
+        "labelId": "TenantId"
+    }, {
+        "name": "BDEURL",
+        "type": "string",
+        "defaultValue": "/CustomerApi/EXTEND/c4ws/services/WorkloadItems/EXTEND_100",
+        "labelId": "Service URL"
+    }, {
+        "name": "operator1",
+        "type": "string",
+        "defaultValue": "<="
+    }, {
+        "name": "level1",
+        "type": "string",
+        "defaultValue": "10",
+        "labelId": "Level1Lable"
+    }, {
+        "name": "level1Color",
+        "labelId": "Level1ColorLable",
+        "defaultValue": "#44831F"
+    }, {
+        "name": "operator2",
+        "type": "string",
+        "defaultValue": "<="
+    }, {
+        "name": "level2",
+        "type": "string",
+        "defaultValue": "30",
+        "labelId": "Level2Lable"
+    }, {
+        "name": "level2Color",
+        "labelId": "Level2ColorLable",
+        "defaultValue": "#DE7223"
+    }, {
+        "name": "operator3",
+        "type": "string",
+        "defaultValue": ">="
+    }, {
+        "name": "level3",
+        "type": "string",
+        "defaultValue": "30",
+        "labelId": "Level2Lable"
+    }, {
+        "name": "level3Color",
+        "labelId": "Level3ColorLable",
+        "defaultValue": "#A13030"
+    }],
+    "localization": {
+        "en-US": {
+            "widgetTitle": "Count Widget",
+            "widgetDescription": "Count Widget",
+            "emptyConfigTitle": "Configure Widget",
+            "emptyConfigDescription": "Configure widget by clicking the button",
+            "emptyConfigButton": "Configure",
+            "textStyleSettingLabel": "Text Style",
+            "textColorSettingLabel": "Text Color",
+            "Level1Lable": "Level 1",
+            "Level1ColorLable": "Color",
+            "companyId": "Company",
+            "LogicalId": "LogicalId",
+            "Method": "Method",
+            "Location": "Location",
+            "ViewId": "ViewId",
+            "TenantId": "TenantId",
+            "BDEURL": "BDEURL",
+            "level1": "Level 1",
+            "level1Color": "Color",
+            "level2": "Level 2",
+            "level2Color": "Color",
+            "level3": "Level 3",
+            "level3Color": "Color",
+            "DueDays": "Due in next(Days)"
+        }
+    },
+    "sohoVersion": "10.9.0"
+}
